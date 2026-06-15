@@ -1,0 +1,74 @@
+category,device,chipset,npu,npu_tops,platform
+Phones,iPhone 17 Pro Max,A19 Pro,Apple Neural Engine,45,Apple Intelligence
+Phones,iPhone 17 Pro,A19 Pro,Apple Neural Engine,45,Apple Intelligence
+Phones,iPhone Air,A19 Pro,Apple Neural Engine,45,Apple Intelligence
+Phones,iPhone 17,A19,Apple Neural Engine,38,Apple Intelligence
+Phones,iPhone 17e,A19,Apple Neural Engine,38,Apple Intelligence
+Phones,iPhone 16 Pro Max,A18 Pro,Apple Neural Engine,35,Apple Intelligence
+Phones,iPhone 16 Pro,A18 Pro,Apple Neural Engine,35,Apple Intelligence
+Phones,iPhone 16 Plus,A18,Apple Neural Engine,35,Apple Intelligence
+Phones,iPhone 16,A18,Apple Neural Engine,35,Apple Intelligence
+Phones,iPhone 16e,A18,Apple Neural Engine,35,Apple Intelligence
+Phones,Galaxy S25 Ultra,Snapdragon 8 Elite for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S25+,Snapdragon 8 Elite for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S25,Snapdragon 8 Elite for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S25 FE,Exynos 2400,Exynos NPU,44,Galaxy AI
+Phones,Galaxy S24 Ultra,Snapdragon 8 Gen 3 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S24+,Exynos 2400,Exynos NPU,44,Galaxy AI
+Phones,Galaxy S24,Snapdragon 8 Gen 3 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S24 FE,Exynos 2400e,Exynos NPU,44,Galaxy AI
+Phones,Galaxy S23 Ultra,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S23+,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S23,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy S23 FE,Exynos 2200 / Snapdragon 8 Gen 1,Exynos NPU / Qualcomm Hexagon NPU,25,Galaxy AI
+Phones,Galaxy Z Fold7,Snapdragon 8 Elite for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy Z Flip7,Snapdragon 8 Elite for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy Z Fold6,Snapdragon 8 Gen 3 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy Z Flip6,Snapdragon 8 Gen 3 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy Z Fold5,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Galaxy Z Flip5,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Tablets,Galaxy Tab S11,MediaTek Dimensity 9400,MediaTek NPU,50,Galaxy AI
+Tablets,Galaxy Tab S10 Ultra,MediaTek Dimensity 9300+,MediaTek NPU,59,Galaxy AI
+Tablets,Galaxy Tab S10+,MediaTek Dimensity 9300+,MediaTek NPU,59,Galaxy AI
+Tablets,Galaxy Tab S9 Ultra,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Tablets,Galaxy Tab S9+,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Tablets,Galaxy Tab S9,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Phones,Pixel 10 Pro Fold,Tensor G5,Google Tensor NPU,24,Gemini Nano
+Phones,Pixel 10 Pro XL,Tensor G5,Google Tensor NPU,24,Gemini Nano
+Phones,Pixel 10 Pro,Tensor G5,Google Tensor NPU,24,Gemini Nano
+Phones,Pixel 10,Tensor G5,Google Tensor NPU,24,Gemini Nano
+Phones,Pixel 9 Pro Fold,Tensor G4,Google Tensor NPU,23,Gemini Nano
+Phones,Pixel 9 Pro XL,Tensor G4,Google Tensor NPU,23,Gemini Nano
+Phones,Pixel 9 Pro,Tensor G4,Google Tensor NPU,23,Gemini Nano
+Phones,Pixel 9,Tensor G4,Google Tensor NPU,23,Gemini Nano
+Phones,Pixel 8 Pro,Tensor G3,Google Tensor NPU,22,Gemini Nano
+Phones,Pixel 8,Tensor G3,Google Tensor NPU,22,Gemini Nano
+Phones,Pixel 8a,Tensor G3,Google Tensor NPU,22,Gemini Nano
+Phones,Pixel Fold,Tensor G2,Google Tensor NPU,18,Gemini Nano
+AI PCs,Surface Laptop 8,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,Surface Laptop 8 Intel,Intel Core Ultra Series 3,Intel AI Boost,48,Copilot+
+AI PCs,Surface Laptop 7,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,Surface Pro 12,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,Surface Pro 12 Intel,Intel Core Ultra Series 3,Intel AI Boost,48,Copilot+
+AI PCs,Surface Pro 11,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,Lenovo ThinkPad X1 Carbon Gen 13,Intel Core Ultra 7 Series 2,Intel AI Boost,48,Copilot+
+AI PCs,Lenovo ThinkPad T14 Gen 6,Intel Core Ultra 7 Series 2 / AMD Ryzen AI PRO 400,Intel AI Boost / AMD XDNA 2,50,Copilot+
+AI PCs,Lenovo Yoga Pro 9i Aura Edition,Intel Core Ultra 9 Series 2,Intel AI Boost,48,Copilot+
+AI PCs,Lenovo ThinkCentre neo 55a Gen 6,AMD Ryzen AI 300,AMD XDNA 2,50,Copilot+
+AI PCs,Dell XPS 13 AI PC,Intel Core Ultra 200V,Intel AI Boost,48,Copilot+
+AI PCs,Dell Inspiron 14 Plus AI PC,Intel Core Ultra 200V,Intel AI Boost,48,Copilot+
+AI PCs,HP OmniBook Ultra 14,AMD Ryzen AI 300,AMD XDNA 2,50,Copilot+
+AI PCs,HP EliteBook X G1a,AMD Ryzen AI HX PRO,AMD XDNA 2,50,Copilot+
+AI PCs,HP EliteBook Ultra G1q,Qualcomm Snapdragon X Elite,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,Asus Zenbook S 16,AMD Ryzen AI 300,AMD XDNA 2,50,Copilot+
+AI PCs,Asus Vivobook S 15,Qualcomm Snapdragon X Elite,Qualcomm Hexagon NPU,45,Copilot+
+Phones,Xiaomi 15 Ultra,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,Xiaomi HyperAI
+Phones,Xiaomi 15 Pro,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,Xiaomi HyperAI
+Phones,Xiaomi 15,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,Xiaomi HyperAI
+Phones,Xiaomi MIX Flip 2,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,Xiaomi HyperAI
+Phones,Honor Magic7 Pro,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,MagicOS AI
+Phones,Honor Magic7,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,MagicOS AI
+Phones,Honor Magic V4,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,MagicOS AI
+Phones,OnePlus 13,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,OnePlus AI
+Phones,OnePlus 13R,Snapdragon 8 Gen 3,Qualcomm Hexagon NPU,45,OnePlus AI
+Phones,OnePlus 13T,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,OnePlus AI

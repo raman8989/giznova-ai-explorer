@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giznova AI Feature Explorer</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+            background: #f8f8f8;
+            color: #222;
+        }
+
+        h1 {
+            color: #111;
+        }
+
+        form {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            padding: 12px;
+            width: 350px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            background: #0078ff;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #005fd1;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 14px;
+            margin-right: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+            background: #eef5ff;
+            color: #0047ab;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+
+        th {
+            background: #f1f1f1;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .summary-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f7fbff;
+            border-left: 5px solid #0078ff;
+            border-radius: 6px;
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 22px;
+            background: #e5e5e5;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .progress-bar {
+            height: 22px;
+            background: #0078ff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>🚀 Giznova AI Feature Explorer</h1>
+
+<p>
+Compare AI phones, tablets, and AI PCs.
+Explore NPU performance, local AI capabilities,
+AI feature support, and on-device AI readiness.
+</p>
+
+<p style="color:#666;">
+Try: Galaxy S25 Ultra, Pixel 10 Pro XL,
+iPhone 17 Pro Max, Surface Laptop 8
+</p>
+
+<p>
+<a href="/">Explorer</a> |
+<a href="/compare">Compare</a> |
+<a href="/top-ai-devices">All Devices</a> |
+<a href="/top-ai-phones">Phones</a> |
+<a href="/top-ai-tablets">Tablets</a> |
+<a href="/top-ai-pcs">AI PCs</a>
+</p>
+
+<form method="POST">
+
+    <input
+        type="text"
+        name="device"
+        placeholder="Galaxy S24 Ultra"
+        list="devices"
+        required
+    >
+
+    <datalist id="devices">
+
+    <option value="Galaxy S25 Ultra">
+    <option value="Galaxy S25">
+    <option value="Galaxy S24 Ultra">
+
+    <option value="Galaxy Z Fold7">
+    <option value="Galaxy Z Flip7">
+
+    <option value="Pixel 10 Pro XL">
+    <option value="Pixel 10 Pro">
+    <option value="Pixel 10">
+
+    <option value="Pixel 9 Pro XL">
+    <option value="Pixel 9">
+
+    <option value="iPhone 17 Pro Max">
+    <option value="iPhone 17 Pro">
+    <option value="iPhone Air">
+    <option value="iPhone 17">
+
+    <option value="Surface Laptop 8">
+    <option value="Surface Pro 12">
+
+    <option value="Xiaomi 15 Ultra">
+    <option value="Honor Magic7 Pro">
+    <option value="OnePlus 13">
+
+    </datalist>
+
+    <button type="submit">
+        Search
+    </button>
+
+</form>
+<div class="card">
+
+<h3>Explore Rankings</h3>
+
+<p>
+📱 <a href="/top-ai-phones">Top AI Phones</a>
+</p>
+
+<p>
+📟 <a href="/top-ai-tablets">Top AI Tablets</a>
+</p>
+
+<p>
+💻 <a href="/top-ai-pcs">Top AI PCs</a>
+</p>
+
+</div>
+
+{% if device_info %}
+
+<div class="card">
+
+    <h2>
+
+    <a href="/device/{{ device_info.device|lower|replace(' ','-') }}">
+    {{ device_info.device }}
+    </a>
+
+    </h2>
+
+    <span class="badge">
+    {{ device_info.platform }}
+    </span>
+
+    <p><strong>Chipset:</strong> {{ device_info.chipset }}</p>
+
+    <p><strong>AI Platform:</strong> {{ device_info.platform }}</p>
+
+    <p><strong>NPU TOPS:</strong> {{ device_info.npu_tops }}</p>
+
+    <p><strong>Total AI Features:</strong>
+    {{ device_info.local_features + device_info.hybrid_features }}</p>
+
+
+    <p><strong>Minimum OS:</strong> {{ device_info.min_os }}</p>
+
+    <hr>
+
+    <h3>AI Capability Summary</h3>
+
+    <span class="badge">
+        AI Readiness Score:
+        {{ device_info.readiness_score }}/100
+    </span>
+
+    <span class="badge">
+        Rating:
+        {{ device_info.readiness }}
+    </span>
+
+    <span class="badge">
+        Local AI:
+        {{ device_info.local_ai }}
+    </span>
+
+    <span class="badge">
+        Local Features:
+        {{ device_info.local_features }}
+    </span>
+
+    <span class="badge">
+        Hybrid Features:
+        {{ device_info.hybrid_features }}
+    </span>
+
+    <div class="progress-container">
+
+        <div
+            class="progress-bar"
+            style="width: {{ device_info.readiness_score }}%;"
+        >
+        </div>
+
+    </div>
+
+    <div class="summary-box">
+
+        <h4>AI Architecture Analysis</h4>
+
+        <p>
+            {{ device_info.analysis }}
+        </p>
+
+    </div>
+
+    <div class="summary-box">
+
+        {% if device_info.platform == "Gemini Nano" %}
+
+        <strong>Verdict:</strong>
+        This device offers some of the strongest on-device AI capabilities currently available.
+
+        {% elif device_info.platform == "Apple Intelligence" %}
+
+        <strong>Verdict:</strong>
+        Apple Intelligence focuses on privacy-first AI through a hybrid architecture combining local processing and Private Cloud Compute.
+
+        {% elif device_info.platform == "Galaxy AI" %}
+
+        <strong>Verdict:</strong>
+        Galaxy AI balances local AI acceleration with cloud-powered features to deliver broader AI functionality.
+
+        {% elif device_info.platform == "Copilot+" %}
+
+        <strong>Verdict:</strong>
+        This device is optimized for next-generation AI PC workloads with dedicated NPU acceleration.
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endif %}
+
+{% if results is not none and not results.empty %}
+
+<div class="card">
+
+    <h2>Supported AI Features</h2>
+
+    <table>
+
+        <tr>
+            <th>Feature</th>
+            <th>Execution Type</th>
+            <th>Offline Support</th>
+        </tr>
+
+        {% for row in results.itertuples() %}
+
+        <tr>
+            <td>{{ row.feature }}</td>
+            <td>{{ row.execution }}</td>
+            <td>{{ row.offline }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</div>
+
+{% endif %}
+
+{% if results is not none and results.empty %}
+
+<div class="card">
+
+<h3>Device Not Found</h3>
+
+<p>
+We couldn't find that device in the current Giznova AI database.
+Try searching for another AI phone, tablet, or AI PC.
+</p>
+
+</div>
+
+{% endif %}
+
+</body>
+
+</html>

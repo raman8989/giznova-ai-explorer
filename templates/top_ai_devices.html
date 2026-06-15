@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Top AI Devices 2026</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+    background:#f8f8f8;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+th{
+    background:#f2f2f2;
+}
+
+a{
+    text-decoration:none;
+    color:#0078ff;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.info-box{
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.nav{
+    margin-bottom:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🚀 Top AI Devices 2026</h1>
+
+<div class="info-box">
+
+<p>
+This ranking is based on NPU AI performance (TOPS).
+Higher TOPS generally indicates stronger on-device AI processing,
+although software optimization, AI models, and feature support also matter.
+</p>
+
+</div>
+
+<div class="nav">
+
+<a href="/">Explorer</a> |
+<a href="/compare">Compare</a> |
+<a href="/top-ai-devices">All Devices</a> |
+<a href="/top-ai-phones">Phones</a> |
+<a href="/top-ai-tablets">Tablets</a> |
+<a href="/top-ai-pcs">AI PCs</a>
+
+</div>
+
+<table>
+
+<tr>
+<th>Rank</th>
+<th>Device</th>
+<th>Platform</th>
+<th>NPU TOPS</th>
+</tr>
+
+{% for row in devices.itertuples() %}
+
+<tr>
+
+<td>
+{{ loop.index }}
+</td>
+
+<td>
+<a href="/device/{{ row.device|lower|replace(' ','-') }}">
+{{ row.device }}
+</a>
+</td>
+
+<td>
+{{ row.platform }}
+</td>
+
+<td>
+{{ row.npu_tops }}
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+
+</html>

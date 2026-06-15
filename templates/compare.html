@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Device Comparison</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+th{
+    background:#f2f2f2;
+}
+
+select{
+    padding:10px;
+    margin-right:10px;
+}
+
+button{
+    padding:10px;
+}
+
+.verdict{
+    margin-top:20px;
+    padding:15px;
+    background:#eef7ff;
+    border-left:5px solid #0078ff;
+    border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>AI Device Comparison</h1>
+
+<form method="POST">
+
+<select name="device1" required>
+
+<option value="">
+Select Device 1
+</option>
+
+{% for device in devices %}
+<option value="{{ device }}">
+{{ device }}
+</option>
+{% endfor %}
+
+</select>
+
+<select name="device2" required>
+
+<option value="">
+Select Device 2
+</option>
+
+{% for device in devices %}
+<option value="{{ device }}">
+{{ device }}
+</option>
+{% endfor %}
+
+</select>
+
+<button>
+Compare
+</button>
+
+</form>
+
+{% if comparison %}
+
+<table>
+
+<tr>
+<th>Metric</th>
+<th>{{ comparison.device1.name }}</th>
+<th>{{ comparison.device2.name }}</th>
+</tr>
+
+<tr>
+<td>Chipset</td>
+<td>{{ comparison.device1.chipset }}</td>
+<td>{{ comparison.device2.chipset }}</td>
+</tr>
+
+<tr>
+<td>AI Platform</td>
+<td>{{ comparison.device1.platform }}</td>
+<td>{{ comparison.device2.platform }}</td>
+</tr>
+
+<tr>
+<td>NPU TOPS</td>
+<td>{{ comparison.device1.tops }}</td>
+<td>{{ comparison.device2.tops }}</td>
+</tr>
+
+<tr>
+<td>Local AI Rating</td>
+<td>{{ comparison.device1.local_ai }}</td>
+<td>{{ comparison.device2.local_ai }}</td>
+</tr>
+
+<tr>
+<td>Best For</td>
+<td>{{ comparison.device1.best_for }}</td>
+<td>{{ comparison.device2.best_for }}</td>
+</tr>
+
+</table>
+
+<div class="verdict">
+
+<h3>Quick Verdict</h3>
+
+<p>
+<strong>NPU Performance Winner:</strong>
+{{ winner }}
+</p>
+
+{% if comparison.device1.local_ai == "High" and comparison.device2.local_ai != "High" %}
+
+<p>
+<strong>Best Local AI:</strong>
+{{ comparison.device1.name }}
+</p>
+
+{% elif comparison.device2.local_ai == "High" and comparison.device1.local_ai != "High" %}
+
+<p>
+<strong>Best Local AI:</strong>
+{{ comparison.device2.name }}
+</p>
+
+{% endif %}
+
+</div>
+
+{% endif %}
+
+</body>
+</html>

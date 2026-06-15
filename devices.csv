@@ -1,0 +1,31 @@
+device,chipset,npu_tops,platform,feature,execution,offline,min_os
+Galaxy S24,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate,Hybrid,No,One UI 6.1
+Galaxy S24,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Note Assist,Hybrid,No,One UI 6.1
+Galaxy S24+,Exynos 2400,45,Galaxy AI,Live Translate,Hybrid,No,One UI 6.1
+Galaxy S24+,Exynos 2400,45,Galaxy AI,Note Assist,Hybrid,No,One UI 6.1
+Galaxy S24 Ultra,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate,Hybrid,No,One UI 6.1
+Galaxy S24 Ultra,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Note Assist,Hybrid,No,One UI 6.1
+Galaxy S25,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate,Hybrid,No,One UI 7
+Galaxy S25,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Note Assist,Hybrid,No,One UI 7
+Galaxy S25 Ultra,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate,Hybrid,No,One UI 7
+Galaxy S25 Ultra,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Note Assist,Hybrid,No,One UI 7
+Pixel 8 Pro,Google Tensor G3,22,Gemini Nano,Recorder Summarize,Local,Yes,Android 14
+Pixel 8 Pro,Google Tensor G3,22,Gemini Nano,Gboard Smart Reply,Local,Yes,Android 14
+Pixel 9,Google Tensor G4,23,Gemini Nano,Talk Live,Local,Yes,Android 15
+Pixel 9,Google Tensor G4,23,Gemini Nano,Recorder Summarize,Local,Yes,Android 15
+Pixel 9 Pro,Google Tensor G4,23,Gemini Nano,Talk Live,Local,Yes,Android 15
+Pixel 9 Pro,Google Tensor G4,23,Gemini Nano,Recorder Summarize,Local,Yes,Android 15
+iPhone 15 Pro,A17 Pro,35,Apple Intelligence,Writing Tools,Hybrid,No,iOS 18.1
+iPhone 15 Pro,A17 Pro,35,Apple Intelligence,Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 15 Pro Max,A17 Pro,35,Apple Intelligence,Writing Tools,Hybrid,No,iOS 18.1
+iPhone 15 Pro Max,A17 Pro,35,Apple Intelligence,Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 16,A18,35,Apple Intelligence,Writing Tools,Hybrid,No,iOS 18.1
+iPhone 16,A18,35,Apple Intelligence,Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 16 Pro,A18 Pro,35,Apple Intelligence,Writing Tools,Hybrid,No,iOS 18.1
+iPhone 16 Pro,A18 Pro,35,Apple Intelligence,Notification Summaries,Hybrid,No,iOS 18.1
+Surface Laptop 7,Snapdragon X Elite / Plus,45,Copilot+,Recall,Hybrid,No,Windows 11 24H2
+Surface Laptop 7,Snapdragon X Elite / Plus,45,Copilot+,Live Captions,Local,Yes,Windows 11 24H2
+Surface Laptop 7,Snapdragon X Elite / Plus,45,Copilot+,Cocreator,Hybrid,No,Windows 11 24H2
+Surface Pro 11,Snapdragon X Elite / Plus,45,Copilot+,Recall,Hybrid,No,Windows 11 24H2
+Surface Pro 11,Snapdragon X Elite / Plus,45,Copilot+,Live Captions,Local,Yes,Windows 11 24H2
+Surface Pro 11,Snapdragon X Elite / Plus,45,Copilot+,Cocreator,Hybrid,No,Windows 11 24H2
