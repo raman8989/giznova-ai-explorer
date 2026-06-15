@@ -292,5 +292,9 @@ def device_page(device_name):
         device=device
     )
 
+@app.route("/methodology")
+def methodology():
+    return render_template("methodology.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
