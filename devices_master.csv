@@ -56,13 +56,11 @@ AI PCs,ASUS ProArt PZ14,Snapdragon X2 Elite,Qualcomm Hexagon NPU,80,Copilot+
 AI PCs,ASUS V400 AiO,Qualcomm Snapdragon X platform,Qualcomm Hexagon NPU,45,Copilot+
 AI PCs,ASUS NUC 16 Pro Mini PC,Intel Core Ultra X9 Series 3,Intel AI Boost,50,Copilot+
 AI PCs,ASUS ExpertCenter PN55,AMD Ryzen AI 400 Series,AMD XDNA 2,55,Copilot+
-AI PCs,ASUS UGen300 USB AI Accelerator,Hailo-10H,Hailo NPU,40,AI accelerator
+AI PCs,ASUS UGen300 USB AI Accelerator,Hailo-10H,Hailo NPU,40
 AI PCs,HP OmniBook Ultra 16,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
 AI PCs,HP OmniBook X 14,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
 AI PCs,HP OmniDesk Mini,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
-AI PCs,HP Z2 Mini G1a,AMD Ryzen AI PRO 400,AMD XDNA 2,50,AI PC
-AI PCs,HP ZGX Fury GB300,NVIDIA Grace Blackwell Ultra,NVIDIA AI accelerator,,AI workstation
-AI PCs,HP ZGX Nano,NVIDIA AI platform,NVIDIA accelerator,,AI PC
+AAI PCs,HP Z2 Mini G1a,AMD Ryzen AI Max+ PRO 395,AMD XDNA 2,50
 AI PCs,HP EliteBook 6 G2q Next Gen AI PC,Qualcomm Snapdragon X platform,Qualcomm Hexagon NPU,80,Copilot+
 AI PCs,Galaxy Book6 Ultra,Intel Core Ultra Series 3,Intel AI Boost,49,Copilot+
 AI PCs,Galaxy Book6 Pro,Intel Core Ultra Series 3,Intel AI Boost,49,Copilot+
