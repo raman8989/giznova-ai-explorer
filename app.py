@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import pandas as pd
 
 app = Flask(__name__)
@@ -295,6 +295,13 @@ def device_page(device_name):
 @app.route("/methodology")
 def methodology():
     return render_template("methodology.html")
+
+@app.route("/sitemap.xml")
+def sitemap():
+    return send_from_directory(
+        "static",
+        "sitemap.xml"
+    )
 
 if __name__ == "__main__":
     app.run(debug=True)
