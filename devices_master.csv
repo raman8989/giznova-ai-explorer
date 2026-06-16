@@ -27,12 +27,16 @@ Phones,Galaxy Z Fold6,Snapdragon 8 Gen 3 for Galaxy,Qualcomm Hexagon NPU,45,Gala
 Phones,Galaxy Z Flip6,Snapdragon 8 Gen 3 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
 Phones,Galaxy Z Fold5,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
 Phones,Galaxy Z Flip5,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
-Tablets,Galaxy Tab S11,MediaTek Dimensity 9400,MediaTek NPU,50,Galaxy AI
+Tablets,Galaxy Tab S11,MediaTek Dimensity 9400+,MediaTek NPU,50,Galaxy AI
 Tablets,Galaxy Tab S10 Ultra,MediaTek Dimensity 9300+,MediaTek NPU,59,Galaxy AI
 Tablets,Galaxy Tab S10+,MediaTek Dimensity 9300+,MediaTek NPU,59,Galaxy AI
 Tablets,Galaxy Tab S9 Ultra,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
 Tablets,Galaxy Tab S9+,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
 Tablets,Galaxy Tab S9,Snapdragon 8 Gen 2 for Galaxy,Qualcomm Hexagon NPU,45,Galaxy AI
+Tablets,iPad Air M3,M3,Apple Neural Engine,18,Apple Intelligence
+Tablets,iPad mini A17 Pro,A17 Pro,Apple Neural Engine,35,Apple Intelligence
+Tablets,Lenovo Yoga Tab Plus,Snapdragon 8 Gen 3,Qualcomm Hexagon NPU,20,Lenovo AI Now
+Tablets,Xiaomi Pad 7 Pro,Snapdragon 8s Gen 3,Qualcomm Hexagon NPU,45,HyperOS AI
 Phones,Pixel 10 Pro Fold,Tensor G5,Google Tensor NPU,24,Gemini Nano
 Phones,Pixel 10 Pro XL,Tensor G5,Google Tensor NPU,24,Gemini Nano
 Phones,Pixel 10 Pro,Tensor G5,Google Tensor NPU,24,Gemini Nano
@@ -45,23 +49,29 @@ Phones,Pixel 8 Pro,Tensor G3,Google Tensor NPU,22,Gemini Nano
 Phones,Pixel 8,Tensor G3,Google Tensor NPU,22,Gemini Nano
 Phones,Pixel 8a,Tensor G3,Google Tensor NPU,22,Gemini Nano
 Phones,Pixel Fold,Tensor G2,Google Tensor NPU,18,Gemini Nano
-AI PCs,Surface Laptop 8,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
-AI PCs,Surface Laptop 8 Intel,Intel Core Ultra Series 3,Intel AI Boost,48,Copilot+
-AI PCs,Surface Laptop 7,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
-AI PCs,Surface Pro 12,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
-AI PCs,Surface Pro 12 Intel,Intel Core Ultra Series 3,Intel AI Boost,48,Copilot+
-AI PCs,Surface Pro 11,Snapdragon X Elite / Plus,Qualcomm Hexagon NPU,45,Copilot+
-AI PCs,Lenovo ThinkPad X1 Carbon Gen 13,Intel Core Ultra 7 Series 2,Intel AI Boost,48,Copilot+
-AI PCs,Lenovo ThinkPad T14 Gen 6,Intel Core Ultra 7 Series 2 / AMD Ryzen AI PRO 400,Intel AI Boost / AMD XDNA 2,50,Copilot+
-AI PCs,Lenovo Yoga Pro 9i Aura Edition,Intel Core Ultra 9 Series 2,Intel AI Boost,48,Copilot+
-AI PCs,Lenovo ThinkCentre neo 55a Gen 6,AMD Ryzen AI 300,AMD XDNA 2,50,Copilot+
-AI PCs,Dell XPS 13 AI PC,Intel Core Ultra 200V,Intel AI Boost,48,Copilot+
-AI PCs,Dell Inspiron 14 Plus AI PC,Intel Core Ultra 200V,Intel AI Boost,48,Copilot+
-AI PCs,HP OmniBook Ultra 14,AMD Ryzen AI 300,AMD XDNA 2,50,Copilot+
-AI PCs,HP EliteBook X G1a,AMD Ryzen AI HX PRO,AMD XDNA 2,50,Copilot+
-AI PCs,HP EliteBook Ultra G1q,Qualcomm Snapdragon X Elite,Qualcomm Hexagon NPU,45,Copilot+
-AI PCs,Asus Zenbook S 16,AMD Ryzen AI 300,AMD XDNA 2,50,Copilot+
-AI PCs,Asus Vivobook S 15,Qualcomm Snapdragon X Elite,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,ASUS Zenbook DUO,Intel Core Ultra X9 Series 3,Intel AI Boost,50,Copilot+
+AI PCs,ASUS Zenbook A14,Snapdragon X2 Elite,Qualcomm Hexagon NPU,80,Copilot+
+AI PCs,ASUS Zenbook A16,Snapdragon X2 Elite Extreme,Qualcomm Hexagon NPU,80,Copilot+
+AI PCs,ASUS ProArt PZ14,Snapdragon X2 Elite,Qualcomm Hexagon NPU,80,Copilot+
+AI PCs,ASUS V400 AiO,Qualcomm Snapdragon X platform,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,ASUS NUC 16 Pro Mini PC,Intel Core Ultra X9 Series 3,Intel AI Boost,50,Copilot+
+AI PCs,ASUS ExpertCenter PN55,AMD Ryzen AI 400 Series,AMD XDNA 2,55,Copilot+
+AI PCs,ASUS UGen300 USB AI Accelerator,Hailo-10H,Hailo NPU,40,AI accelerator
+AI PCs,HP OmniBook Ultra 16,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
+AI PCs,HP OmniBook X 14,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
+AI PCs,HP OmniDesk Mini,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
+AI PCs,HP Z2 Mini G1a,AMD Ryzen AI PRO 400,AMD XDNA 2,50,AI PC
+AI PCs,HP ZGX Fury GB300,NVIDIA Grace Blackwell Ultra,NVIDIA AI accelerator,,AI workstation
+AI PCs,HP ZGX Nano,NVIDIA AI platform,NVIDIA accelerator,,AI PC
+AI PCs,HP EliteBook 6 G2q Next Gen AI PC,Qualcomm Snapdragon X platform,Qualcomm Hexagon NPU,80,Copilot+
+AI PCs,Galaxy Book6 Ultra,Intel Core Ultra Series 3,Intel AI Boost,49,Copilot+
+AI PCs,Galaxy Book6 Pro,Intel Core Ultra Series 3,Intel AI Boost,49,Copilot+
+AI PCs,Galaxy Book6,Intel Core Ultra Series 3,Intel AI Boost,49,Copilot+
+AI PCs,MacBook Air M5,Apple M5,Apple Neural Engine,,Apple Intelligence
+AI PCs,MacBook Neo,Apple Silicon,16-core Neural Engine,,Apple Intelligence
+AI PCs,Lenovo Yoga Pro 9i Aura Edition,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
+AI PCs,Lenovo Yoga Slim 7x,Snapdragon X Elite,Qualcomm Hexagon NPU,45,Copilot+
+AI PCs,MSI Stealth 16 AI+,Intel Core Ultra Series 3,Intel AI Boost,50,Copilot+
 Phones,Xiaomi 15 Ultra,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,Xiaomi HyperAI
 Phones,Xiaomi 15 Pro,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,Xiaomi HyperAI
 Phones,Xiaomi 15,Snapdragon 8 Elite,Qualcomm Hexagon NPU,45,Xiaomi HyperAI

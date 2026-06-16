@@ -81,11 +81,43 @@ h1{
     margin-bottom:15px;
 }
 
+.highlight{
+    background:#fff8e6;
+    padding:15px;
+    border-left:5px solid #ffb300;
+    border-radius:8px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
 </style>
 
 </head>
 
 <body>
+
+<div style="
+background:white;
+padding:15px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+">
+
+<a href="https://giznova.in" target="_blank" class="action-btn">
+🏠 Giznova Home
+</a>
+
+<a href="/" class="action-btn">
+🔍 Explorer
+</a>
+
+<a href="/compare" class="action-btn">
+⚖ Compare
+</a>
+
+</div>
 
 <div class="card">
 
@@ -113,7 +145,12 @@ h1{
 
     <div class="info-row">
         <strong>NPU TOPS:</strong>
+        {% if device.npu_tops == device.npu_tops %}
         {{ device.npu_tops }}
+        {% else %}
+        Not Public
+        {% endif %}
+
     </div>
 
     <div class="highlight">
@@ -139,7 +176,11 @@ h1{
         </span>
 
         <span class="badge">
+            {% if device.npu_tops == device.npu_tops %}
             {{ device.npu_tops }} TOPS
+            {% else %}
+            Not Public
+            {% endif %}
         </span>
 
         <span class="badge">
@@ -154,19 +195,31 @@ h1{
 
     <div style="margin-top:25px;">
 
-    <a href="/" class="action-btn">
-        ← Explorer
-    </a>
-
-    <a href="/compare" class="action-btn">
-        ⚖ Compare
-    </a>
-
     <a href="/top-ai-phones" class="action-btn">
-        📊 Rankings
+        📊 All Rankings
     </a>
 
     </div>
+
+</div>
+
+<div style="height:50px;"></div>
+
+<div style="
+text-align:center;
+color:#666;
+padding-top:20px;
+border-top:1px solid #ddd;
+">
+
+<p>
+© 2026 Giznova AI Explorer
+</p>
+
+<p>
+<a href="/methodology">Methodology</a> |
+<a href="https://giznova.in">Giznova Home</a>
+</p>
 
 </div>
 

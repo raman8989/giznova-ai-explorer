@@ -79,6 +79,7 @@ although software optimization, AI models, and feature support also matter.
 
 <div class="nav">
 
+<a href="https://giznova.in">🏠 Giznova Home</a> |
 <a href="/">Explorer</a> |
 <a href="/compare">Compare</a> |
 <a href="/top-ai-devices">All Devices</a> |
@@ -116,7 +117,11 @@ although software optimization, AI models, and feature support also matter.
 </td>
 
 <td>
-{{ row.npu_tops }}
+{% if row.npu_tops == row.npu_tops %}
+    {{ row.npu_tops }}
+{% else %}
+    Not Public
+{% endif %}
 </td>
 
 </tr>
@@ -124,6 +129,26 @@ although software optimization, AI models, and feature support also matter.
 {% endfor %}
 
 </table>
+
+<div style="height:50px;"></div>
+
+<div style="
+text-align:center;
+color:#666;
+padding-top:20px;
+border-top:1px solid #ddd;
+">
+
+<p>
+© 2026 Giznova AI Explorer
+</p>
+
+<p>
+<a href="/methodology">Methodology</a> |
+<a href="https://giznova.in">Giznova Home</a>
+</p>
+
+</div>
 
 </body>
 

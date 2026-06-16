@@ -43,7 +43,17 @@ select{
 }
 
 button{
-    padding:10px;
+    padding:10px 16px;
+    background:#0078ff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005fd1;
 }
 
 .verdict{
@@ -54,13 +64,54 @@ button{
     border-radius:6px;
 }
 
+.action-btn{
+    display:inline-block;
+    padding:10px 16px;
+    background:#0078ff;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.action-btn:hover{
+    background:#005fd1;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>AI Device Comparison</h1>
+<div style="
+background:white;
+padding:15px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+">
+
+<a href="https://giznova.in" target="_blank" class="action-btn">
+🏠 Giznova Home
+</a>
+
+<a href="/" class="action-btn">
+🔍 Explorer
+</a>
+
+<a href="/top-ai-devices" class="action-btn">
+📊 Rankings
+</a>
+
+</div>
+
+<h1>⚖️ AI Device Comparison</h1>
+
+<p>
+Compare AI phones, tablets and AI PCs based on NPU performance, AI platform and local AI capabilities.
+</p>
 
 <form method="POST">
 
@@ -92,11 +143,35 @@ Select Device 2
 
 </select>
 
-<button>
-Compare
+<button type="submit">
+⚖️ Compare Devices
 </button>
 
 </form>
+
+{% if not comparison %}
+
+<div class="verdict">
+
+<h3>🔥 Popular AI Device Comparisons</h3>
+
+<ul>
+<li>Galaxy S25 Ultra vs iPhone 17 Pro Max</li>
+<li>Galaxy S25 Ultra vs Pixel 10 Pro XL</li>
+<li>iPhone 17 Pro Max vs Pixel 10 Pro XL</li>
+<li>Surface Laptop 8 vs HP OmniBook Ultra 14</li>
+<li>Galaxy Tab S10 Ultra vs iPad Pro</li>
+</ul>
+
+<p>
+<a href="/top-ai-phones">Top AI Phones</a> |
+<a href="/top-ai-tablets">Top AI Tablets</a> |
+<a href="/top-ai-pcs">Top AI PCs</a>
+</p>
+
+</div>
+
+{% endif %}
 
 {% if comparison %}
 
@@ -122,8 +197,21 @@ Compare
 
 <tr>
 <td>NPU TOPS</td>
-<td>{{ comparison.device1.tops }}</td>
-<td>{{ comparison.device2.tops }}</td>
+
+<td>
+{{ comparison.device1.tops }}
+{% if comparison.device1.tops > comparison.device2.tops %}
+🏆
+{% endif %}
+</td>
+
+<td>
+{{ comparison.device2.tops }}
+{% if comparison.device2.tops > comparison.device1.tops %}
+🏆
+{% endif %}
+</td>
+
 </tr>
 
 <tr>
@@ -142,12 +230,22 @@ Compare
 
 <div class="verdict">
 
-<h3>Quick Verdict</h3>
+<h3>🏆 Quick Verdict</h3>
+
+{% if winner == "Tie" %}
 
 <p>
-<strong>NPU Performance Winner:</strong>
+🤝 Both devices offer similar AI performance.
+</p>
+
+{% else %}
+
+<p>
+🏆 <strong>NPU Performance Winner:</strong>
 {{ winner }}
 </p>
+
+{% endif %}
 
 {% if comparison.device1.local_ai == "High" and comparison.device2.local_ai != "High" %}
 
@@ -165,9 +263,34 @@ Compare
 
 {% endif %}
 
+<p style="margin-top:15px;color:#666;font-size:14px;">
+Note: Rankings are based primarily on NPU TOPS and available AI platform information.
+Real-world AI performance may vary depending on software optimization and workloads.
+</p>
+
 </div>
 
 {% endif %}
+
+<div style="height:50px;"></div>
+
+<div style="
+text-align:center;
+color:#666;
+padding-top:20px;
+border-top:1px solid #ddd;
+">
+
+<p>
+© 2026 Giznova AI Explorer
+</p>
+
+<p>
+<a href="/methodology">Methodology</a> |
+<a href="https://giznova.in">Giznova Home</a>
+</p>
+
+</div>
 
 </body>
 </html>
