@@ -188,20 +188,63 @@ box-shadow:0 2px 8px rgba(0,0,0,.08);
         </span>
 
         <span class="badge">
-            2026 AI Device
+
+        {% if device.category == "Phones" %}
+        AI Smartphone
+        {% elif device.category == "Tablets" %}
+        AI Tablet
+        {% elif device.category == "AI PCs" %}
+        AI PC
+        {% else %}
+        AI Device
+        {% endif %}
+
         </span>
 
+    {% if feature_data is not none %}
+
+    <div style="
+    margin-top:25px;
+    padding:20px;
+    background:#f7fbff;
+    border-radius:10px;
+    border-left:4px solid #0078ff;
+    ">
+
+    <h3>✨ AI Features</h3>
+
+    <ul>
+    {% for item in feature_data["feature"].split(" + ") %}
+    <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+
+    <p>
+    <strong>Execution:</strong>
+    {{ feature_data["execution"] }}
+    </p>
+
+    <p>
+    <strong>Offline AI:</strong>
+    {{ feature_data["offline"] }}
+    </p>
+
+    <p>
+    <strong>Minimum OS:</strong>
+    {{ feature_data["min_os"] }}
+    </p>
+
     </div>
+
+    {% endif %}
 
     <div style="margin-top:25px;">
 
     <a href="/top-ai-phones" class="action-btn">
-        📊 All Rankings
+    📊 All Rankings
     </a>
 
     </div>
-
-</div>
 
 <div style="height:50px;"></div>
 

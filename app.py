@@ -274,6 +274,7 @@ def top_ai_pcs():
 def device_page(device_name):
 
     master_df = pd.read_csv("devices_master.csv")
+    features_df = pd.read_csv("devices.csv")
 
     device_name = device_name.replace("-", " ")
 
@@ -287,9 +288,20 @@ def device_page(device_name):
 
     device = result.iloc[0]
 
+    feature_result = features_df[
+        features_df["device"].str.lower()
+        == device_name.lower()
+        ]
+
+    feature_data = None
+
+    if not feature_result.empty:
+        feature_data = feature_result.iloc[0].to_dict()
+
     return render_template(
         "device.html",
-        device=device
+        device=device,
+        feature_data=feature_data
     )
 
 @app.route("/methodology")
