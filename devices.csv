@@ -1,15 +1,111 @@
 device,chipset,npu_tops,platform,feature,execution,offline,min_os
-Galaxy S24,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
-Galaxy S24+,Exynos 2400,44,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
-Galaxy S24 Ultra,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
-Galaxy S25,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate + Note Assist,Hybrid,Yes,One UI 7
-Galaxy S25 Ultra,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate + Note Assist,Hybrid,Yes,One UI 7
-Pixel 8 Pro,Google Tensor G3,13,Gemini Nano,Recorder Summarize + Gboard Smart Reply,Local,Yes,Android 14
-Pixel 9,Google Tensor G4,45,Gemini Nano,Talk Live + Recorder Summarize,Local,Yes,Android 15
-Pixel 9 Pro,Google Tensor G4,45,Gemini Nano,Talk Live + Recorder Summarize,Local,Yes,Android 15
-iPhone 15 Pro,A17 Pro,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
-iPhone 15 Pro Max,A17 Pro,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
-iPhone 16,A18,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 17 Pro Max,A19 Pro,140,Apple Intelligence,Live Translation + Writing Tools + Visual Intelligence + Siri Enhancements,Hybrid,No,iOS 26
+iPhone 17 Pro,A19 Pro,140,Apple Intelligence,Live Translation + Writing Tools + Visual Intelligence + Siri Enhancements,Hybrid,No,iOS 26
+iPhone Air,A19 Pro,140,Apple Intelligence,Live Translation + Writing Tools + Visual Intelligence + Siri Enhancements,Hybrid,No,iOS 26
+iPhone 17,A19,35,Apple Intelligence,Live Translation + Writing Tools + Visual Intelligence,Hybrid,No,iOS 26
+iPhone 17e,A19,35,Apple Intelligence,Live Translation + Writing Tools,Hybrid,No,iOS 26
+iPhone 16 Pro Max,A18 Pro,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
 iPhone 16 Pro,A18 Pro,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
-Surface Laptop 7,Snapdragon X Elite / Plus,45,Copilot+,Recall + Live Captions + Cocreator,Hybrid,No,Windows 11 24H2
-Surface Pro 11,Snapdragon X Elite / Plus,45,Copilot+,Recall + Live Captions + Cocreator,Hybrid,No,Windows 11 24H2
+iPhone 16 Plus,A18,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 16,A18,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 16e,A18,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 15 Pro Max,A17 Pro,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 15 Pro,A17 Pro,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18.1
+iPhone 15 Plus,A17,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18
+iPhone 15,A17,35,Apple Intelligence,Writing Tools + Notification Summaries,Hybrid,No,iOS 18
+Galaxy S25 Ultra,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate + Note Assist + AI Select + Now Brief + Audio Eraser,Hybrid,Yes,One UI 7
+Galaxy S25+,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate + Note Assist + AI Select + Now Brief + Audio Eraser,Hybrid,Yes,One UI 7
+Galaxy S25,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate + Note Assist + AI Select + Now Brief + Audio Eraser,Hybrid,Yes,One UI 7
+Galaxy S25 FE,Exynos 2400,44,Galaxy AI,Live Translate + Note Assist + AI Select,Hybrid,Yes,One UI 7
+Galaxy S24 Ultra,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate + Note Assist + Photo Assist + Writing Assist,Hybrid,No,One UI 6.1
+Galaxy S24+,Exynos 2400,44,Galaxy AI,Live Translate + Note Assist + Photo Assist + Writing Assist,Hybrid,No,One UI 6.1
+Galaxy S24,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate + Note Assist + Photo Assist + Writing Assist,Hybrid,No,One UI 6.1
+Galaxy S24 FE,Exynos 2400e,44,Galaxy AI,Live Translate + Note Assist + Photo Assist,Hybrid,No,One UI 6.1
+Galaxy S23 Ultra,Snapdragon 8 Gen 2 for Galaxy,26,Galaxy AI,Live Translate + Note Assist + Photo Assist,Hybrid,No,One UI 6.1
+Galaxy S23+,Snapdragon 8 Gen 2 for Galaxy,26,Galaxy AI,Live Translate + Note Assist + Photo Assist,Hybrid,No,One UI 6.1
+Galaxy S23,Snapdragon 8 Gen 2 for Galaxy,26,Galaxy AI,Live Translate + Note Assist + Photo Assist,Hybrid,No,One UI 6.1
+Galaxy S23 FE,Exynos 2200 / Snapdragon 8 Gen 1,26,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
+Galaxy Z Fold7,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate + Note Assist + AI Select + Now Brief,Hybrid,Yes,One UI 7
+Galaxy Z Flip7,Snapdragon 8 Elite for Galaxy,45,Galaxy AI,Live Translate + Note Assist + AI Select + Now Brief,Hybrid,Yes,One UI 7
+Galaxy Z Fold6,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate + Note Assist + Photo Assist,Hybrid,No,One UI 6.1
+Galaxy Z Flip6,Snapdragon 8 Gen 3 for Galaxy,45,Galaxy AI,Live Translate + Note Assist + Photo Assist,Hybrid,No,One UI 6.1
+Galaxy Z Fold5,Snapdragon 8 Gen 2 for Galaxy,26,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
+Galaxy Z Flip5,Snapdragon 8 Gen 2 for Galaxy,26,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
+Galaxy Z Fold4,Snapdragon 8+ Gen 1,26,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
+Galaxy Z Flip4,Snapdragon 8+ Gen 1,26,Galaxy AI,Live Translate + Note Assist,Hybrid,No,One UI 6.1
+Pixel 10 Pro Fold,Tensor G5,18,Gemini Nano,Recorder Summarize + Call Notes + Call Screen + Pixel Studio,Local,Yes,Android 15
+Pixel 10 Pro XL,Tensor G5,18,Gemini Nano,Recorder Summarize + Call Notes + Call Screen,Local,Yes,Android 15
+Pixel 10 Pro,Tensor G5,18,Gemini Nano,Recorder Summarize + Call Notes + Call Screen,Local,Yes,Android 15
+Pixel 10,Tensor G5,18,Gemini Nano,Recorder Summarize + Call Notes + Call Screen,Local,Yes,Android 15
+Pixel 9 Pro Fold,Tensor G4,45,Gemini Nano,Talk Live + Call Notes + Call Screen + Reimagine,Local,Yes,Android 15
+Pixel 9 Pro XL,Tensor G4,45,Gemini Nano,Talk Live + Call Notes + Call Screen + Reimagine + Video Boost,Local,Yes,Android 15
+Pixel 9 Pro,Tensor G4,45,Gemini Nano,Talk Live + Call Notes + Call Screen + Reimagine + Video Boost,Local,Yes,Android 15
+Pixel 9,Tensor G4,45,Gemini Nano,Talk Live + Call Notes + Call Screen + Reimagine,Local,Yes,Android 15
+Pixel 8a,Tensor G3,13,Gemini Nano,Recorder Summarize + Magic Editor + Call Screen,Local,Yes,Android 14
+Pixel 8 Pro,Tensor G3,13,Gemini Nano,Recorder Summarize + Magic Editor + Call Screen + Best Take,Local,Yes,Android 14
+Pixel 8,Tensor G3,13,Gemini Nano,Recorder Summarize + Magic Editor + Call Screen,Local,Yes,Android 14
+Pixel 7 Pro,Pixel 2nd Gen,13,Gemini Nano,Magic Eraser + Call Screen,Local,Yes,Android 13
+Pixel 7,Pixel 2nd Gen,13,Gemini Nano,Magic Eraser + Call Screen,Local,Yes,Android 13
+Pixel Fold,Pixel 2nd Gen,13,Gemini Nano,Magic Eraser + Call Screen,Local,Yes,Android 13
+Xiaomi 15 Ultra,Snapdragon 8 Elite,45,Xiaomi HyperAI,AI Eraser + Text Bridge + AI Interpreter + AI Notes,Hybrid,No,Android 14
+Xiaomi 15 Pro,Snapdragon 8 Elite,45,Xiaomi HyperAI,AI Eraser + Text Bridge + AI Interpreter + AI Notes,Hybrid,No,Android 14
+Xiaomi 15,Snapdragon 8 Elite,45,Xiaomi HyperAI,AI Eraser + Text Bridge + AI Interpreter + AI Notes,Hybrid,No,Android 14
+Xiaomi MIX Flip 2,Snapdragon 8 Elite,45,Xiaomi HyperAI,AI Eraser + Text Bridge + AI Interpreter,Hybrid,No,Android 14
+Xiaomi 14T,Snapdragon 8 Gen 3,45,Xiaomi HyperAI + Google AI,AI Interpreter + AI Recorder + Circle to Search + Gemini Live,Hybrid,No,Android 14
+Xiaomi 14,Snapdragon 8 Gen 3,45,Xiaomi HyperAI,AI Eraser + AI Notes,Hybrid,No,Android 14
+Honor Magic7 Pro,Snapdragon 8 Elite,45,MagicOS AI,AI Call Assistant + Voice Cursor + AI Upscale + Deepfake Detection,Hybrid,Yes,Android 15
+Honor Magic7,Snapdragon 8 Elite,45,MagicOS AI,AI Call Assistant + Voice Cursor + AI Upscale + Deepfake Detection,Hybrid,Yes,Android 15
+Honor Magic V4,Snapdragon 8 Elite,45,MagicOS AI,AI Call Assistant + Voice Cursor + AI Upscale,Hybrid,Yes,Android 14
+Honor Magic6 Pro,Snapdragon 8 Gen 3,45,MagicOS AI,AI Motion Sensing + AI Image Restoration + Magic Portal + Magic Text,Hybrid,Yes,Android 14
+Honor 400 Pro,Snapdragon 7 Gen 3,20,MagicOS AI,AI Super Zoom + AI Portrait Snap + AI Camera Engine,Hybrid,Yes,Android 14
+Honor 400,Snapdragon 7 Gen 3,20,MagicOS AI,AI Portrait Snap + AI Camera Engine,Hybrid,Yes,Android 14
+OnePlus 15,Snapdragon 8 Elite Gen 5,45,OnePlus AI + Gemini,Plus Mind + AI Writer + AI Recorder + AI Portrait Glow + AI Translation,Hybrid,Yes,Android 16
+OnePlus 13,Snapdragon 8 Elite,45,OnePlus AI,AI Sentence Catch + Smart Eraser + AI Translation + AI Notes + Intelligent Search,Hybrid,Yes,Android 15
+OnePlus 13R,Snapdragon 8 Gen 3,45,OnePlus AI,AI Sentence Catch + Smart Eraser + AI Translation,Hybrid,Yes,Android 15
+OnePlus 13s,Snapdragon 8 Gen 3,45,OnePlus AI,AI Plus Mind + AI VoiceScribe + AI Call Assistant,Hybrid,Yes,Android 15
+Galaxy Tab S11 Ultra,MediaTek Dimensity 9400+,50,Galaxy AI,Gemini + AI Note + Live Translate,Hybrid,Yes,Android 15
+Galaxy Tab S11,MediaTek Dimensity 9400+,50,Galaxy AI,Gemini + AI Note + Live Translate,Hybrid,Yes,Android 15
+Galaxy Tab S10 Ultra,MediaTek Dimensity 9300+,59,Galaxy AI,Gemini + AI Note + Live Translate,Hybrid,Yes,Android 14
+Galaxy Tab S10+,MediaTek Dimensity 9300+,59,Galaxy AI,Gemini + AI Note + Live Translate,Hybrid,Yes,Android 14
+Galaxy Tab S10 FE,Exynos 2400,44,Galaxy AI,Gemini + AI Note,Hybrid,Yes,Android 14
+Galaxy Tab S9 Ultra,Snapdragon 8 Gen 2,26,Galaxy AI,Gemini + AI Note,Hybrid,No,Android 13
+Galaxy Tab S9+,Snapdragon 8 Gen 2,26,Galaxy AI,Gemini + AI Note,Hybrid,No,Android 13
+Galaxy Tab S9,Snapdragon 8 Gen 2,26,Galaxy AI,Gemini + AI Note,Hybrid,No,Android 13
+Galaxy Tab S9 FE,Exynos 1380,15,Galaxy AI,Gemini,Hybrid,No,Android 13
+iPad Air M3,M3,18,Apple Intelligence,Writing Tools + Siri + Image Wand + Genmoji,Hybrid,No,iPadOS 18
+iPad Air M2,M2,18,Apple Intelligence,Writing Tools + Siri,Hybrid,No,iPadOS 17
+iPad mini A17 Pro,A17 Pro,35,Apple Intelligence,Writing Tools + Siri,Hybrid,No,iPadOS 18
+iPad mini M2,M2,18,Apple Intelligence,Writing Tools + Siri,Hybrid,No,iPadOS 18
+MacBook Air M5,Apple M5,133,Apple Intelligence,Writing Tools + Siri + Genmoji + Image Wand,Hybrid,No,macOS 15
+MacBook Neo,Apple A18 Pro,35,Apple Intelligence,Writing Tools + Siri,Hybrid,No,macOS 15
+MacBook Pro M4,M4,48,Apple Intelligence,Writing Tools + Siri + Image Wand,Hybrid,No,macOS 15
+MacBook Pro M4 Max,M4 Max,72,Apple Intelligence,Writing Tools + Siri + Image Wand,Hybrid,No,macOS 15
+Lenovo Yoga Tab Plus,Snapdragon 8 Gen 3,45,Lenovo AI Now,AI Assistant + Voice Memo + AI Summary,Hybrid,Yes,Android 14
+Xiaomi Pad 7 Pro,Snapdragon 8s Gen 3,45,HyperOS AI,AI Writing + Text Eraser + AI Notes,Hybrid,No,Android 14
+Xiaomi Pad 6,Snapdragon 870,15,HyperOS AI,AI Writing,Hybrid,No,Android 13
+ASUS Zenbook DUO,Snapdragon X Elite,45,Copilot+,Copilot + Recall + Cocreator,Hybrid,No,Windows 11 24H2
+ASUS Zenbook A14,Snapdragon X2 Elite,80,Copilot+,Copilot + Live Captions + Cocreator,Local,Yes,Windows 11 24H2
+ASUS Zenbook A16,Snapdragon X2 Elite Extreme,80,Copilot+,Copilot + Live Captions + Cocreator,Local,Yes,Windows 11 24H2
+ASUS ProArt PZ14,Snapdragon X2 Elite,80,Copilot+,Copilot + Live Captions,Local,Yes,Windows 11 24H2
+ASUS Vivobook S16,AI 300 Series,55,Copilot+,Copilot + Recall,Hybrid,Yes,Windows 11 24H2
+ASUS Zenbook S16,AI 300 Series,55,Copilot+,Copilot + Recall,Hybrid,Yes,Windows 11 24H2
+ASUS V400 AiO,Qualcomm Snapdragon X Plus,45,Copilot+,Copilot + Cocreator,Hybrid,No,Windows 11 24H2
+ASUS NUC 16 Pro Mini PC,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+ASUS ExpertCenter PN55,AMD Ryzen AI 400 Series,55,Copilot+,Copilot + AI Assistant,Hybrid,Yes,Windows 11 24H2
+HP OmniBook Ultra 16,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+HP OmniBook X 14,Snapdragon X Elite,45,Copilot+,Copilot + Live Captions,Local,Yes,Windows 11 24H2
+HP OmniDesk Mini,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+HP OmniBook 5,Snapdragon X Plus,45,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+HP Z2 Mini G1a,AMD Ryzen AI Max+ PRO 395,55,Copilot+,Copilot + AI Assistant,Hybrid,Yes,Windows 11 24H2
+HP EliteBook 6 G1q,Snapdragon X processor,45,Copilot+,Copilot + Live Captions,Local,Yes,Windows 11 24H2
+HP EliteBook Ultra G1q,Snapdragon X Elite,45,Copilot+,Copilot + Live Captions,Local,Yes,Windows 11 24H2
+Galaxy Book6 Ultra,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+Galaxy Book6 Pro,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+Galaxy Book6,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+MacBook Air M4,M4,48,Apple Intelligence,Writing Tools + Siri + Genmoji,Hybrid,No,macOS 15
+MacBook Pro M3,M3,18,Apple Intelligence,Writing Tools + Siri,Hybrid,No,macOS 14
+Lenovo Yoga Pro 9i Aura Edition,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall + AI Assistant,Hybrid,No,Windows 11 24H2
+Lenovo Yoga Slim 7x,Snapdragon X Elite,45,Copilot+,Copilot + Live Captions,Local,Yes,Windows 11 24H2
+Lenovo ThinkPad X1 Carbon Gen 12,Intel Core Ultra 7,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+MSI Stealth 16 AI+,Intel Core Ultra Series 3,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
+MSI Prestige 16 AI Evo,Intel Core Ultra 7,50,Copilot+,Copilot + Recall,Hybrid,No,Windows 11 24H2
