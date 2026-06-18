@@ -315,5 +315,14 @@ def sitemap():
         "sitemap.xml"
     )
 
+@app.route("/robots.txt")
+def robots():
+    return """
+User-agent: *
+Allow: /
+
+Sitemap: https://ai.giznova.in/sitemap.xml
+""", 200, {"Content-Type": "text/plain"}
+
 if __name__ == "__main__":
     app.run(debug=True)
