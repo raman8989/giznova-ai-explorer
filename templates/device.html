@@ -15,7 +15,11 @@
       gtag('config', 'G-SBV6FEQ7DS');
     </script>
 
-<title>{{ device.device }}</title>
+<title>{{ device.device }} AI Specs, NPU TOPS & AI Features | Giznova AI Explorer</title>
+
+<meta name="description" content="{{ device.device }} AI specifications, NPU TOPS performance, AI features, platform details, and on-device AI capabilities on Giznova AI Explorer.">
+
+<link rel="canonical" href="{{ request.url }}">
 
 <style>
 
@@ -245,6 +249,78 @@ box-shadow:0 2px 8px rgba(0,0,0,.08);
     </a>
 
     </div>
+
+<div style="
+margin-top:25px;
+padding:20px;
+background:#f7fbff;
+border-radius:10px;
+border-left:4px solid #28a745;
+">
+
+<h3>💡 What This Means</h3>
+
+<p>
+The AI capabilities of this device depend on both hardware and software optimization. Higher NPU TOPS ratings can improve AI performance, but real-world results also depend on memory bandwidth, operating system integration, thermal design, and supported AI features.
+</p>
+
+</div>
+
+<div style="
+margin-top:25px;
+padding:20px;
+background:#f8f9fa;
+border-radius:10px;
+border-left:4px solid #0078ff;
+">
+
+<h3>📚 About AI Ratings</h3>
+
+<p>
+AI ratings are based primarily on publicly available NPU TOPS performance, AI platform capabilities, and available on-device AI features.
+</p>
+
+<p>
+Real-world AI performance may vary depending on software optimization, memory bandwidth, operating system integration, thermal design, and workload characteristics.
+</p>
+
+<p style="font-size:13px;color:#666;">
+Specifications and AI feature data are based on publicly available manufacturer information, platform documentation, and official product announcements.
+</p>
+
+</div>
+
+<div style="
+margin-top:25px;
+padding:20px;
+background:#ffffff;
+border-radius:10px;
+border:1px solid #ddd;
+">
+
+<h3>🔍 Similar AI Devices</h3>
+
+<ul>
+
+{% for item in related_devices.itertuples() %}
+
+<li style="margin-bottom:10px;">
+
+<a href="/device/{{ item.device|lower|replace(' ','-') }}">
+{{ item.device }}
+</a>
+
+{% if item.npu_tops == item.npu_tops %}
+— {{ item.npu_tops }} TOPS
+{% endif %}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
 
 <div style="height:50px;"></div>
 

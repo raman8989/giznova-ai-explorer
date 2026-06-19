@@ -225,7 +225,8 @@ def top_ai_devices():
 
     return render_template(
         "top_ai_devices.html",
-        devices=devices
+        devices=devices,
+        page_title="Top AI Devices"
     )
 
 @app.route("/top-ai-phones")
@@ -239,7 +240,8 @@ def top_ai_phones():
 
     return render_template(
         "top_ai_devices.html",
-        devices=phones
+        devices=phones,
+        page_title="Top AI Phones"
     )
 
 @app.route("/top-ai-tablets")
@@ -253,7 +255,8 @@ def top_ai_tablets():
 
     return render_template(
         "top_ai_devices.html",
-        devices=tablets
+        devices=tablets,
+        page_title="Top AI Tablets"
     )
 
 @app.route("/top-ai-pcs")
@@ -267,7 +270,8 @@ def top_ai_pcs():
 
     return render_template(
         "top_ai_devices.html",
-        devices=pcs
+        devices=pcs,
+        page_title="Top AI PCs"
     )
 
 @app.route("/device/<device_name>")
@@ -298,10 +302,16 @@ def device_page(device_name):
     if not feature_result.empty:
         feature_data = feature_result.iloc[0].to_dict()
 
+    related_devices = master_df[
+        (master_df["category"] == device["category"]) &
+        (master_df["device"].str.lower() != device["device"].lower())
+        ].head(5)
+
     return render_template(
         "device.html",
         device=device,
-        feature_data=feature_data
+        feature_data=feature_data,
+        related_devices=related_devices
     )
 
 @app.route("/methodology")
