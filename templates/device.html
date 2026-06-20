@@ -21,6 +21,18 @@
 
 <link rel="canonical" href="{{ request.url }}">
 
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"{{ device.device }}",
+  "category":"{{ device.category }}",
+  "brand":"{{ device.platform }}",
+  "model":"{{ device.chipset }}",
+  "description":"{{ device.device }} AI specifications, NPU TOPS performance, AI platform, chipset and AI features."
+}
+</script>
+
 <style>
 
 body{
@@ -157,7 +169,30 @@ box-shadow:0 2px 8px rgba(0,0,0,.08);
 
     </div>
 
+    <div class="info-row">
+
+   🏆 <strong>AI Ranking:</strong>
+
+   {% if device.category == "Phones" %}
+   #{{ rank_position }} of {{ total_devices }} AI Phones
+   (<a href="/top-ai-phones">View Rankings</a>)
+
+   {% elif device.category == "Tablets" %}
+   #{{ rank_position }} of {{ total_devices }} AI Tablets
+   (<a href="/top-ai-tablets">View Rankings</a>)
+
+   {% elif device.category == "AI PCs" %}
+   #{{ rank_position }} of {{ total_devices }} AI PCs
+   (<a href="/top-ai-pcs">View Rankings</a>)
+
+   {% endif %}
+
+   </div>
+
+
+
     <div class="highlight">
+
 
     {% if device.npu_tops >= 50 %}
     🏆 <strong>AI Rating:</strong> Elite
@@ -274,6 +309,24 @@ border-radius:10px;
 border-left:4px solid #0078ff;
 ">
 
+<h3>❓ Frequently Asked Questions</h3>
+
+<h4>What does {{ device.npu_tops }} TOPS mean?</h4>
+<p>
+TOPS measures the theoretical AI processing capability of the NPU. Higher values generally indicate better AI acceleration performance.
+</p>
+
+<h4>Can {{ device.device }} run AI offline?</h4>
+<p>
+AI capabilities depend on platform support, available AI features, and software optimization.
+</p>
+
+<h4>Is {{ device.device }} good for on-device AI?</h4>
+<p>
+Based on its NPU performance and AI platform support, this device is rated as {{ ai_rating }} for AI workloads.
+</p>
+
+
 <h3>📚 About AI Ratings</h3>
 
 <p>
@@ -298,15 +351,32 @@ border-radius:10px;
 border:1px solid #ddd;
 ">
 
-<h3>🔍 Similar AI Devices</h3>
+<h3>⚖ Compare This Device</h3>
 
-<ul>
+<p>
+Compare {{ device.device }} with similar AI devices based on NPU TOPS, AI platform, and local AI capabilities.
+</p>
+
+<a href="/compare" class="action-btn">
+⚖ Open Comparison Tool
+</a>
+
+<h3>🔍 Similar AI Devices</h3>
 
 {% for item in related_devices.itertuples() %}
 
-<li style="margin-bottom:10px;">
+<div style="
+padding:12px;
+margin-bottom:12px;
+border:1px solid #eee;
+border-radius:8px;
+background:#fafafa;
+">
 
-<a href="/device/{{ item.device|lower|replace(' ','-') }}">
+<div style="margin-bottom:8px;">
+
+<a href="/device/{{ item.device|lower|replace(' ','-') }}"
+style="font-weight:bold;">
 {{ item.device }}
 </a>
 
@@ -314,11 +384,27 @@ border:1px solid #ddd;
 — {{ item.npu_tops }} TOPS
 {% endif %}
 
-</li>
+</div>
+
+<a href="/device/{{ item.device|lower|replace(' ','-') }}"
+class="action-btn"
+style="padding:8px 12px;font-size:14px;">
+View Device
+</a>
+
+<a href="/compare?device1={{ device.device }}&device2={{ item.device }}"
+class="action-btn"
+style="
+padding:8px 12px;
+font-size:14px;
+background:#28a745;
+">
+Compare
+</a>
+
+</div>
 
 {% endfor %}
-
-</ul>
 
 </div>
 

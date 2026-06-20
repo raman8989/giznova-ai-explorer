@@ -159,12 +159,14 @@ def compare():
 
     comparison = None
     winner = None
+    device1 = request.args.get("device1")
+    device2 = request.args.get("device2")
 
-    if request.method == "POST":
+    if request.method == "POST" or (device1 and device2):
 
-        device1 = request.form["device1"]
-        device2 = request.form["device2"]
-
+        if request.method == "POST":
+            device1 = request.form["device1"]
+            device2 = request.form["device2"]
         d1 = df[df["device"] == device1]
         d2 = df[df["device"] == device2]
 
@@ -210,7 +212,9 @@ def compare():
         "compare.html",
         devices=devices,
         comparison=comparison,
-        winner=winner
+        winner=winner,
+        selected_device1=device1,
+        selected_device2=device2
     )
 
 @app.route("/top-ai-devices")
@@ -302,6 +306,23 @@ def device_page(device_name):
     if not feature_result.empty:
         feature_data = feature_result.iloc[0].to_dict()
 
+    category_devices = master_df[
+        master_df["category"] == device["category"]
+    ].sort_values(
+        by="npu_tops",
+        ascending=False
+    ).reset_index(drop=True)
+
+    rank_position = (category_devices[
+                            category_devices["device"] == device["device"]
+                            ].index[0]
+    ) + 1
+
+    total_devices = len(category_devices)
+
+
+
+
     related_devices = master_df[
         (master_df["category"] == device["category"]) &
         (master_df["device"].str.lower() != device["device"].lower())
@@ -311,7 +332,9 @@ def device_page(device_name):
         "device.html",
         device=device,
         feature_data=feature_data,
-        related_devices=related_devices
+        related_devices=related_devices,
+        rank_position=rank_position,
+        total_devices = total_devices
     )
 
 @app.route("/methodology")
