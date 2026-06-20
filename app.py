@@ -308,7 +308,7 @@ def device_page(device_name):
 
     category_devices = master_df[
         master_df["category"] == device["category"]
-    ].sort_values(
+        ].sort_values(
         by="npu_tops",
         ascending=False
     ).reset_index(drop=True)
