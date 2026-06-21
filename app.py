@@ -414,6 +414,53 @@ def device_page(device_name):
         total_devices = total_devices
     )
 
+@app.route("/platform/<platform_name>")
+def platform_page(platform_name):
+
+    master_df = pd.read_csv("devices_master.csv")
+
+    if platform_name == "copilot-plus":
+        platform_name = "Copilot+"
+    else:
+        platform_name = platform_name.replace("-", " ")
+
+    devices = master_df[
+        master_df["platform"].str.lower()
+        == platform_name.lower()
+    ]
+
+    if devices.empty:
+        return "Platform not found"
+
+    descriptions = {
+        "Galaxy Ai":
+        "Galaxy AI is Samsung's AI platform combining on-device AI processing and cloud-powered AI features such as Live Translate, Note Assist, Circle to Search, and Generative Edit.",
+
+        "Apple Intelligence":
+        "Apple Intelligence is Apple's personal intelligence system designed for iPhone, iPad, and Mac. It combines on-device AI processing with Private Cloud Compute for privacy-focused AI experiences.",
+
+        "Gemini Nano":
+        "Gemini Nano is Google's on-device AI platform designed to run AI models locally on supported Android devices for faster and more private AI experiences.",
+
+        "Copilot+":
+        "Copilot+ is Microsoft's AI PC platform powered by dedicated NPUs, enabling local AI workloads such as Recall, Studio Effects, Live Captions, and AI-assisted productivity."
+    }
+
+    description = descriptions.get(
+        platform_name.title(),
+        "Explore AI devices and capabilities on this platform."
+    )
+
+    return render_template(
+        "platform.html",
+        platform_name=platform_name.title(),
+        devices=devices.sort_values(
+            by="npu_tops",
+            ascending=False
+        ),
+        description=description
+    )
+
 @app.route("/methodology")
 def methodology():
     return render_template("methodology.html")

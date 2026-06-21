@@ -182,7 +182,21 @@ box-shadow:0 2px 8px rgba(0,0,0,.08);
 
     <div class="info-row">
         <strong>Platform:</strong>
-        {{ device.platform }}
+
+        {% if device.platform == "Copilot+" %}
+
+        <a href="/platform/copilot-plus">
+           {{ device.platform }}
+        </a>
+
+        {% else %}
+
+        <a href="/platform/{{ device.platform|lower|replace(' ','-') }}">
+            {{ device.platform }}
+        </a>
+
+        {% endif %}
+
     </div>
 
     <div class="info-row">
@@ -247,7 +261,23 @@ box-shadow:0 2px 8px rgba(0,0,0,.08);
     <div style="margin-top:20px;">
 
         <span class="badge">
-            {{ device.platform }}
+
+        {% if device.platform == "Copilot+" %}
+
+        <a href="/platform/copilot-plus"
+        style="text-decoration:none;color:inherit;">
+        {{ device.platform }}
+        </a>
+
+        {% else %}
+
+        <a href="/platform/{{ device.platform|lower|replace(' ','-') }}"
+        style="text-decoration:none;color:inherit;">
+        {{ device.platform }}
+        </a>
+
+        {% endif %}
+
         </span>
 
         <span class="badge">

@@ -9,7 +9,12 @@ urls = [
     "https://ai.giznova.in/top-ai-phones",
     "https://ai.giznova.in/top-ai-tablets",
     "https://ai.giznova.in/top-ai-pcs",
-    "https://ai.giznova.in/methodology"
+    "https://ai.giznova.in/methodology",
+
+    "https://ai.giznova.in/platform/apple-intelligence",
+    "https://ai.giznova.in/platform/galaxy-ai",
+    "https://ai.giznova.in/platform/gemini-nano",
+    "https://ai.giznova.in/platform/copilot-plus"
 ]
 
 for device in df["device"]:
