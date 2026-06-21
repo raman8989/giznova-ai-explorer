@@ -232,6 +232,28 @@ Device rankings, comparison results, and AI feature information are based on pub
 
 </div>
 
+<div class="card">
+
+<h3>🔥 Featured AI Comparisons</h3>
+
+<ul>
+
+{% for item in popular_comparisons %}
+
+<li>
+
+<a href="/compare?device1={{ item.device1 }}&device2={{ item.device2 }}">
+{{ item.device1 }} vs {{ item.device2 }}
+</a>
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
 {% if device_info %}
 
 <div class="card">

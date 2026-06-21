@@ -134,7 +134,7 @@ Select Device 1
 
 {% for device in devices %}
 <option value="{{ device }}"
-{% if selected_device1 == device %}
+{% if selected_device1|lower == device|lower %}
 selected
 {% endif %}
 >
@@ -152,7 +152,7 @@ Select Device 2
 
 {% for device in devices %}
 <option value="{{ device }}"
-{% if selected_device2 == device %}
+{% if selected_device2|lower == device|lower %}
 selected
 {% endif %}
 >

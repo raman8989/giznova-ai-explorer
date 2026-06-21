@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request, redirect, send_from_directory
 import pandas as pd
 
 app = Flask(__name__)
@@ -11,6 +11,54 @@ def home():
 
     results = None
     device_info = None
+    master_df = pd.read_csv("devices_master.csv")
+
+    phone_devices = (
+        master_df[master_df["category"] == "Phones"]
+        .sort_values(
+            by="npu_tops",
+            ascending=False
+        )
+        .head(2)
+    )
+
+    pc_devices = (
+        master_df[master_df["category"] == "AI PCs"]
+        .sort_values(
+            by="npu_tops",
+            ascending=False
+        )
+        .head(2)
+    )
+
+    tablet_devices = (
+        master_df[master_df["category"] == "Tablets"]
+        .sort_values(
+            by="npu_tops",
+            ascending=False
+        )
+        .head(2)
+    )
+
+    popular_comparisons = []
+
+    if len(phone_devices) >= 2:
+        popular_comparisons.append({
+            "device1": phone_devices.iloc[0]["device"],
+            "device2": phone_devices.iloc[1]["device"]
+        })
+
+    if len(pc_devices) >= 2:
+        popular_comparisons.append({
+            "device1": pc_devices.iloc[0]["device"],
+            "device2": pc_devices.iloc[1]["device"]
+        })
+
+    if len(tablet_devices) >= 2:
+        popular_comparisons.append({
+            "device1": tablet_devices.iloc[0]["device"],
+            "device2": tablet_devices.iloc[1]["device"]
+        })
 
     if request.method == "POST":
 
@@ -122,7 +170,8 @@ def home():
     return render_template(
         "index.html",
         results=results,
-        device_info=device_info
+        device_info=device_info,
+        popular_comparisons=popular_comparisons
     )
 
 def get_local_ai(platform):
@@ -167,8 +216,23 @@ def compare():
         if request.method == "POST":
             device1 = request.form["device1"]
             device2 = request.form["device2"]
-        d1 = df[df["device"] == device1]
-        d2 = df[df["device"] == device2]
+            slug = (
+                    device1.lower().replace(" ", "-")
+                    + "-vs-" +
+                    device2.lower().replace(" ", "-")
+            )
+
+            return redirect(f"/compare/{slug}")
+
+        d1 = df[
+            df["device"].str.lower() ==
+            device1.lower()
+            ]
+
+        d2 = df[
+            df["device"].str.lower() ==
+            device2.lower()
+            ]
 
         if not d1.empty and not d2.empty:
 
@@ -176,15 +240,15 @@ def compare():
             tops2 = int(d2.iloc[0]["npu_tops"])
 
             if tops1 > tops2:
-                winner = device1
+                winner = d1.iloc[0]["device"]
             elif tops2 > tops1:
-                winner = device2
+                winner = d2.iloc[0]["device"]
             else:
                 winner = "Tie"
 
             comparison = {
                 "device1": {
-                    "name": device1,
+                    "name": d1.iloc[0]["device"],
                     "platform": d1.iloc[0]["platform"],
                     "tops": tops1,
                     "chipset": d1.iloc[0]["chipset"],
@@ -196,7 +260,7 @@ def compare():
                     )
                 },
                 "device2": {
-                    "name": device2,
+                    "name": d2.iloc[0]["device"],
                     "platform": d2.iloc[0]["platform"],
                     "tops": tops2,
                     "chipset": d2.iloc[0]["chipset"],
@@ -215,6 +279,22 @@ def compare():
         winner=winner,
         selected_device1=device1,
         selected_device2=device2
+    )
+
+
+@app.route("/compare/<slug>")
+def compare_slug(slug):
+
+    parts = slug.split("-vs-")
+
+    if len(parts) != 2:
+        return "Invalid comparison"
+
+    device1 = parts[0].replace("-", " ")
+    device2 = parts[1].replace("-", " ")
+
+    return redirect(
+        f"/compare?device1={device1}&device2={device2}"
     )
 
 @app.route("/top-ai-devices")
@@ -319,9 +399,6 @@ def device_page(device_name):
     ) + 1
 
     total_devices = len(category_devices)
-
-
-
 
     related_devices = master_df[
         (master_df["category"] == device["category"]) &
